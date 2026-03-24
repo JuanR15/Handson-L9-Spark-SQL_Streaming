@@ -136,4 +136,34 @@ By the end of this assignment, you should be able to:
 - [ ] Submit your GitHub repo link on canvas
 
 ---
+## Additional Notes for TA
+## How to Run
 
+1. Install dependencies and create the output folders.
+2. Start `data_generator.py` in one terminal.
+3. Open three additional terminals.
+4. Set Java 17 in each task terminal, then run `task1.py`, `task2.py`, and `task3.py`.
+5. Check the generated results in the `outputs/` directory.
+
+Run this below: 
+
+pip install pyspark faker
+mkdir -p outputs/task_1 outputs/task_2 outputs/task_3
+
+# Terminal 1
+python data_generator.py
+
+# Terminal 2
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+python task1.py
+
+# Terminal 3
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+python task2.py
+
+# Terminal 4
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+python task3.py
